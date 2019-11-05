@@ -1,0 +1,36 @@
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.responsive-img{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.responsive-img img{
+    margin-left: 5%;
+}
+
+
+.btn{
+    background: crimson;
+    border: none;
+    width: 30%;
+    padding: 1px;
+    color: aliceblue;
+    font-family: Algerian;
+    font-size: 27px;
+    outline: none;
+}
+.btn-container{
+    margin-top: 30px;
+    text-align: center;
+}
+.btn:hover{
+    background: aliceblue;
+    color: crimson;
+}
