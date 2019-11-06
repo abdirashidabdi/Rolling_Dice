@@ -21,7 +21,8 @@ def indexView(request):
 
     mydict = {
         'f': 'first_img',
-        's': 'second_img',
+        's': "second_img"
+
     }
 
-    return render(request, 'app/index.html', mydict)
+    return render(request, 'app/index.html', context=mydict)

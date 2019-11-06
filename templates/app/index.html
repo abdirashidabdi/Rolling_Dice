@@ -24,19 +24,17 @@
             <img src="{% static 'images/diceeLogo@3x.png' %}" alt="">
         </div>
         <div class="responsive-img">
-            {% for x in mydict %}
-            <img src="{{ mydict.x.f }}" alt="first_img">
-            <img src="{{ mydict.x.s}}" alt="second-img">
-            {% endfor %}
+            <img src="" alt="" id="img_one">
+            <img src="" alt="" id="img_two">
         </div>
         <div class="btn-container">
-            <form action="/indexView/"method="post">{% csrf_token %}
-                <button type="submit" class="btn">Roll</button>
-            </form>
+{#            <form action="/indexView/"method="post">{% csrf_token %}#}
+                <button type="submit" class="btn" id="btn">Roll</button>
+{#            </form>#}
 
 
         </div>
     </div>
-
+<script src="{% static 'scripts/main.js' %}"></script>
 </body>
 </html>
