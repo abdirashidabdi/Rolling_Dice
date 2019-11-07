@@ -6,22 +6,22 @@ import random
 # Create your views here.
 
 
-def indexView(request):
+def index(request):
     images = [
-        'dice1@3x.png',
-        'dice2@3x.png',
-        'dice3@3x.png',
-        'dice4@3x.png',
-        'dice5@3x.png',
-        'dice6@3x.png',
+        '/static/images/dice1@3x.png',
+        '/static/images/dice2@3x.png',
+        '/static/images/dice3@3x.png',
+        '/static/images/dice4@3x.png',
+        '/static/images/dice5@3x.png',
+        '/static/images/dice6@3x.png',
     ]
 
     first_img = random.choice(images)
     second_img = random.choice(images)
 
-    mydict = {
-        'f': 'first_img',
-        's': 'second_img',
-    }
+    # mydict = {
+    #     'f': first_img,
+    #     's': second_img,
+    # }
 
-    return render(request, 'app/index.html', mydict)
+    return render(request, 'app/index.html', {'f': first_img, 's': second_img})
