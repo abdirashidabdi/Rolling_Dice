@@ -8,5 +8,5 @@ from dice_app.views import index
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
-    url(r'^dicepage/', views.index, name='indexView')
+    url(r'^dicepage/', views.index, name='index')
 ]

@@ -21,5 +21,5 @@ from dice_app.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     # re_path(r'^$', views.index, name='index'),
-    path('indexView/', index),
+    path('', index),
 ]
