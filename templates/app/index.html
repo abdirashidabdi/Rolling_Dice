@@ -24,13 +24,12 @@
             <img src="{% static 'images/diceeLogo@3x.png' %}" alt="">
         </div>
         <div class="responsive-img">
-            {% for x in mydict %}
-            <img src="{{ mydict.x.f }}" alt="first_img">
-            <img src="{{ mydict.x.s}}" alt="second-img">
-            {% endfor %}
+            <img src="{{ f }}" alt="">
+            <img src="{{ s }}" alt="">
+ 
         </div>
         <div class="btn-container">
-            <form action="/indexView/"method="post">{% csrf_token %}
+            <form action="/" method="post">{% csrf_token %}
                 <button type="submit" class="btn">Roll</button>
             </form>
 
